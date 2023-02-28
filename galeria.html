@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERIA</title>
+    <style>
+        div.miniatura
+        {
+            margin: 5px;
+            border: 1px solid #0b3141;
+            float: left;
+            width: 180px;
+            height: 200px;
+        }
+        div.miniatura img
+        {
+            width: 100%;
+            height: 70%;
+        }
+        div.opis
+        {
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".miniatura").click(function(){
+                $(".miniatura").css("width", "200px");
+                $(".miniatura").css("height", "420px");
+                $(this).css("width", "500px");
+                $(this).css("height", "420px");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="miniatura">
+        <img src="javascript.png" alt="logo JS">
+        <div class="opis">Logo JavaScript</div>
+    </div>
+    <div class="miniatura">
+        <img src="css.png" alt="logo CSS">
+        <div class="opis">Logo CSS</div>
+    </div>
+    <div class="miniatura">
+        <img src="html5.png" alt="logo HTML5">
+        <div class="opis">Logo HTML5</div>
+    </div>
+
+    
+</body>
+</html>
