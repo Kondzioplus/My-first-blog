@@ -6,20 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY FIRST BLOG</title>
     <script>
-        function rozwijaj1() {
+        //create function develop1
+
+        function develop1() {
         document.getElementById("p1").innerHTML = "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.<br> It is frequently assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.<br> Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages.<br> HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.";
         };
-        function rozwijaj2() {
+        
+        //create function develop2
+
+        function develop2() {
         document.getElementById("p2").innerHTML = "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language<br> such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web,<br> alongside HTML and JavaScript.CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.";
         };
-        function rozwijaj3() {
+        
+        //create function develop3
+
+        function develop3() {
         document.getElementById("p3").innerHTML = "JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside<br> HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.<br> All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.";
     }
         </script>
 </head>
 <body>
+    <!--first graphic-->
     <img src="homer.png" alt="homer head">
+
+    <!--gallery link-->
     <a href="galeria.html">GALERIA</a>
+
+    <!--gives the appearance-->
     <style>
     h1{
         color: #111201;;
@@ -45,32 +58,22 @@
         margin-right: 20px;
     }
     </style>
+    <!--first heading-->
     <h1>NEW ADVENTURE</h1>
+    <!--second heading-->
     <h2>First steps in programing</h2>
-    
+    <!--headlines and paragraphs with pictures-->
     <h3>HTML</h3>
+    <!--paragraph with photo and "expand" button(1)-->
+    <p id="p1"><img src="html5.png" alt="logo"> The HyperText Markup Language or HTML is the standard markup language<button onclick="develop1()">Więcej</button></p>
     
-    
-    
-    <p id="p1"><img src="html5.png" alt="logo"> The HyperText Markup Language or HTML is the standard markup language<button onclick="rozwijaj1()">Więcej</button></p>
-    
-
-
     <h3>CSS</h3>
+     <!--paragraph with photo and "expand" button(2)-->
+    <p id="p2"><img src="css.png" alt="logo"> Cascading Style Sheets (CSS) is a style sheet language used for describing<button onclick="develop2()">Więcej</button></p>
     
-
-
-    <p id="p2"><img src="css.png" alt="logo"> Cascading Style Sheets (CSS) is a style sheet language used for describing<button onclick="rozwijaj2()">Więcej</button></p>
-    
-
-
     <h3>JavaScript</h3>
-    
-
-
-    <p id="p3"><img src="javascript.png" alt="logo"> JavaScript, often abbreviated as JS, is a programming language that is one<button onclick="rozwijaj3()">Więcej</button></p>
-
-
+     <!--paragraph with photo and "expand" button(3)-->
+    <p id="p3"><img src="javascript.png" alt="logo"> JavaScript, often abbreviated as JS, is a programming language that is one<button onclick="develop3()">Więcej</button></p>
 
 </body>
 </html>
